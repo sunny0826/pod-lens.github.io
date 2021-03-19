@@ -9,6 +9,18 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'sunny0826', // Usually your GitHub org/user name.
   projectName: 'pod-lens.github.io', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      zh: {
+        label: '简体中文',
+      },
+    },
+  },
   themeConfig: {
     navbar: {
       title: 'Kubectl Pod Lens',
@@ -26,6 +38,10 @@ module.exports = {
         {
           href: 'https://github.com/sunny0826/kubectl-pod-lens',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],

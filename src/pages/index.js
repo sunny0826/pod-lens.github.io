@@ -5,7 +5,7 @@ import CodeBlock from '../theme/CodeBlock'
 import Asciinema from '../components/Asciinema'
 import features from '../data/features'
 import demo from '../data/demo'
-import Link from '@docusaurus/Link';
+import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -59,13 +59,13 @@ export default function Home() {
             <img className={styles.heroLogo} src={useBaseUrl('img/logo.svg')} alt="Pod Lens Logo" />
           </div>
           <h1 className={clsx('hero__title', styles.heroTitle)}>{siteConfig.title}</h1>
-          <p className="hero__subtitle">Show pod related resources</p>
+          <p className="hero__subtitle"><Translate>Show pod related resources</Translate></p>
         </div>
       </header>
 
       <div className={clsx('hero', styles.hero)}>
         <div className="container text--center">
-          <h2 className="hero__subtitle">One-Cmd Installation</h2>
+          <h2 className="hero__subtitle"><Translate>One-Cmd Installation</Translate></h2>
           <div className={styles.installTextWrapper}>
             <CodeBlock>kubectl krew install pod-lens</CodeBlock>
           </div>
@@ -89,7 +89,7 @@ export default function Home() {
 
       <div className={clsx('hero', styles.installTextWrapper)}>
         <div className="container text--center" style={{ height: '50em'}}>
-          <h2>Showcase</h2>
+          <h2><Translate>Showcase</Translate></h2>
           <Asciinema url="https://asciinema.org/a/400180.js"></Asciinema>
           <script id="asciicast-400180" src="https://asciinema.org/a/400180.js" async></script>
         </div>

@@ -1,8 +1,9 @@
 import React from 'react'
+import Translate, { translate } from '@docusaurus/Translate';
 
 const demo = [
   {
-    title: <>Display Pod-Related Resource</>,
+    title: <><Translate>Display Pod-Related Resource</Translate></>,
     imgUrl: 'img/example.png',
     description: (
       <>
