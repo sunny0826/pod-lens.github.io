@@ -57,6 +57,23 @@ module.exports = {
       theme: require('prism-react-renderer/themes/dracula'),
     },
   },
+  plugins: [
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ],
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"],
+      },
+    ]
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
