@@ -1,0 +1,66 @@
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
+module.exports = {
+  title: 'Kubectl Pod Lens',
+  tagline: 'Kubectl Pod Lens',
+  url: 'https://pod-lens.guoxudong.io',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'sunny0826', // Usually your GitHub org/user name.
+  projectName: 'pod-lens.github.io', // Usually your repo name.
+  themeConfig: {
+    navbar: {
+      title: 'Kubectl Pod Lens',
+      logo: {
+        alt: 'Pod Lens Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Documentation',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/sunny0826/kubectl-pod-lens',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      copyright: `
+        <br />
+        <strong>© Kubectl Pod Lens Authors ${new Date().getFullYear()} | Documentation Distributed under CC-BY-4.0 </strong>
+        <br />
+      `,
+    },
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+    },
+  },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+};
