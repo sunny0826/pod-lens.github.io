@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Tutorial',
+      label: 'Documentation',
       items: [
         'getting-started',
         'pod-lens',
