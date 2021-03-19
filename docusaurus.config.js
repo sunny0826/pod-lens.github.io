@@ -71,6 +71,7 @@ module.exports = {
       {
         hashed: true,
         language: ["en", "zh"],
+        indexBlog: false,
       },
     ]
   ],
