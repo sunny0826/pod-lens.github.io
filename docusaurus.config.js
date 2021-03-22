@@ -27,6 +27,7 @@ module.exports = {
       logo: {
         alt: 'Pod Lens Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logoDark.svg',
       },
       items: [
         {
