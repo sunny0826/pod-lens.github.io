@@ -5,7 +5,7 @@ module.exports = {
       label: 'Documentation',
       items: [
         'getting-started',
-        'pod-lens',
+        'more-info',
       ],
     },
   ],
