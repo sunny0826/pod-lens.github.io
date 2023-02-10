@@ -7,11 +7,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-0.3.0/getting-started"
+          "id": "version-v0.3.0/getting-started"
         },
         {
           "type": "doc",
-          "id": "version-0.3.0/more-info"
+          "id": "version-v0.3.0/more-info"
         }
       ]
     }
