@@ -9,7 +9,8 @@ import clsx from 'clsx';
 import Highlight, {defaultProps} from 'prism-react-renderer';
 import copy from 'copy-text-to-clipboard';
 import rangeParser from 'parse-numeric-range';
-import usePrismTheme from '@theme/hooks/usePrismTheme';
+// import usePrismTheme from '@theme/hooks/usePrismTheme';
+import dracula from 'prism-react-renderer/themes/dracula';
 import styles from './styles.module.css';
 import {useThemeConfig} from '@docusaurus/theme-common';
 const highlightLinesRangeRegex = /{([\d,-]+)}/;
@@ -100,7 +101,6 @@ export default ({children, className: languageClassName, metastring}) => {
   const button = useRef(null);
   let highlightLines = [];
   let codeBlockTitle = '';
-  const prismTheme = usePrismTheme(); // In case interleaved Markdown (e.g. when using CodeBlock as standalone component).
 
   if (Array.isArray(children)) {
     children = children.join('');
@@ -184,7 +184,7 @@ export default ({children, className: languageClassName, metastring}) => {
     <Highlight
       {...defaultProps}
       key={String(mounted)}
-      theme={prismTheme}
+      theme={dracula}
       code={code}
       language={language}>
       {({className, style, tokens, getLineProps, getTokenProps}) => (
