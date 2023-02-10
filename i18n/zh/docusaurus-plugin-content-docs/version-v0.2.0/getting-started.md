@@ -5,8 +5,8 @@ slug: /
 
 ## 需要
 
-- Kubernetes 1.19.0+
-- Kubectl 1.18.0+
+- Kubernetes 1.10.0+
+- Kubectl 1.13.0+
 - Krew 0.4.0+
 
 ## 安装

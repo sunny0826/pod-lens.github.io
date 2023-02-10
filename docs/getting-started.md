@@ -5,8 +5,8 @@ slug: /
 
 ## Requirements
 
-- Kubernetes 1.10.0+
-- Kubectl 1.13.0+
+- Kubernetes 1.19.0+
+- Kubectl 1.18.0+
 - Krew 0.4.0+
 
 ## Installation
@@ -22,7 +22,6 @@ View the help information.
 ```shell
 kubectl pod-lens -h
 ```
-
 
 ## That's it!
 
